@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasir Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🛒 Sistem Kasir Sederhana</h2>
+
+  <h3>Tambah Barang</h3>
+  <div class="form-barang">
+    <input type="text" id="nama-barang" placeholder="Nama Barang">
+    <input type="number" id="harga-barang" placeholder="Harga (Rp)">
+    <input type="number" id="stok-barang" placeholder="Stok Awal">
+    <button id="tambah-barang">Tambah Barang</button>
+  </div>
+
+  <h3>Transaksi Penjualan</h3>
+  <div class="form-transaksi">
+    <select id="barang"></select>
+    <input type="number" id="jumlah" placeholder="Jumlah">
+    <button id="tambah">Tambah ke Transaksi</button>
+  </div>
+
+  <table id="tabel-transaksi" border="1">
+    <thead>
+      <tr>
+        <th>Barang</th>
+        <th>Harga</th>
+        <th>Jumlah</th>
+        <th>Subtotal</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h3>Total Bayar: <span id="total-bayar">Rp0</span></h3>
+  <button id="reset">Reset Transaksi</button>
+  <button id="cetak">Cetak Struk</button>
